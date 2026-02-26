@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice & Language Converter</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>🎙️ Voice & Language Converter</h1>
+
+    <label>Mode</label>
+    <select id="mode">
+        <option value="tts">Text → Voice</option>
+        <option value="stt">Voice → Text</option>
+        <option value="translate">Language → Language</option>
+    </select>
+
+    <label>Language / Input</label>
+    <select id="language">
+        <option value="en-US">English</option>
+        <option value="te-IN">Telugu</option>
+        <option value="hi-IN">Hindi</option>
+        <option value="ta-IN">Tamil</option>
+        <option value="kn-IN">Kannada</option>
+        <option value="ml-IN">Malayalam</option>
+        <option value="mr-IN">Marathi</option>
+        <option value="bn-IN">Bengali</option>
+        <option value="ur-IN">Urdu</option>
+        <option value="fr-FR">French</option>
+    </select>
+
+    <label>Target Language (For Translation)</label>
+    <select id="targetLang">
+        <option value="en">English</option>
+        <option value="te">Telugu</option>
+        <option value="hi">Hindi</option>
+        <option value="ta">Tamil</option>
+        <option value="kn">Kannada</option>
+        <option value="ml">Malayalam</option>
+        <option value="mr">Marathi</option>
+        <option value="bn">Bengali</option>
+        <option value="ur">Urdu</option>
+        <option value="fr">French</option>
+    </select>
+
+    <label>Original Text</label>
+    <textarea id="sourceText" placeholder="Enter text or use voice input"></textarea>
+    <button onclick="startVoiceInput()">🎤 Voice Input</button>
+
+    <label>Translated Text</label>
+    <textarea id="translatedText" readonly placeholder="Translated text will appear here"></textarea>
+
+    <div class="btns">
+        <button onclick="startAction()">▶ Start</button>
+        <button onclick="clearText()">❌ Clear</button>
+    </div>
+</div>
+
+<script src="/static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    /* center page */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden; /* ❌ scrolling off */
+}
+
+.card {
+    width: 650px;            /* 🔥 width increased */
+    max-width: 95%;
+    background: #ffffff;
+    padding: 28px 30px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+    color: #444;
+    font-size: 14px;
+}
+
+select, textarea, button {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+.btns {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.btns button {
+    flex: 1;
+}
+
+/* 🎤 voice button */
+.voice-btn {
+    background: #38b2ac;
+    margin-top: 6px;
+}
+
+.voice-btn:hover {
+    background: #319795;
+}
